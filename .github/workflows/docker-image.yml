@@ -30,10 +30,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t jonalemonte1997/docker-curso:0.0.1 .
+        docker build -t jonalemonte1997/docker-curso .
         
     - name: Push Docker Image
       run: |
         docker push jonalemonte1997/docker-curso:0.0.1
+        docker push jonalemonte1997/docker-curso
         
 #     - name: Build the Docker image
 #       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
